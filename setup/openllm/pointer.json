@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "script_url": "https://raw.githubusercontent.com/openllmsh/registry/cb35069536be2735fca07e926208fa8e0717a7ea/setup/openllm/install.sh",
-  "script_sha256": "2af8f899202f7c6e3a75def5293a905b894ce313bf75f2ac7cbdf06097d6891c"
+  "script_url": "https://raw.githubusercontent.com/openllmsh/registry/277c5694626625c6218a054e34ee3f1f4cd020ca/setup/openllm/install.sh",
+  "script_sha256": "25e8a6d0ef8613d25da1a6ed8b18524c959ebd08b669a8ae86b8a83fe19c3a6c"
 }
