@@ -1,5 +1,5 @@
 ---
-version: 1.6.39-registry.8
+version: 1.6.39-registry.9
 os: [osx, linux]
 name: OpenLLM CLI
 description: Install the openllmc CLI — the compiled extension runtime that serves the unified OpenLLM MCP server (native gateway API + code search + memory) and the hook subcommands the openllm plugin uses.
