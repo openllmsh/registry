@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "script_url": "https://raw.githubusercontent.com/openllmsh/registry/4eef1eefc4cecbac1b42fc075fa1c089ee89ebbc/setup/raycast/install.sh",
+  "script_url": "https://raw.githubusercontent.com/openllmsh/registry/f7b8a1da6beef84b6195c430bf1d286992c6a8dd/setup/raycast/install.sh",
   "script_sha256": "c2215e1c73ad23d8c5abb8bfa8b741b1cb82db17595674b3fae4cd8db5dcd6c4"
 }
