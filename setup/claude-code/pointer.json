@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "script_url": "https://raw.githubusercontent.com/openllmsh/registry/f1c323c446101f14e10c909c9c558ab188827ede/setup/claude-code/install.sh",
-  "script_sha256": "03475cb5babb2bf8620e72348bdd138382e3a744e865bed3364c2c095a4a20fc"
+  "script_url": "https://raw.githubusercontent.com/openllmsh/registry/4a71ffb3486c3d2165323ea045c3190bb251c4a1/setup/claude-code/install.sh",
+  "script_sha256": "f70d70e09b08399b69d3896fe75b6a3fd38430b721e4a50f46f5636d25692088"
 }
