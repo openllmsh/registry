@@ -1,5 +1,5 @@
 ---
-version: 1.6.39-registry.7
+version: 1.6.39-registry.8
 os: [osx, linux]
 name: Codex
 description: Point the Codex CLI at OpenLLM — adds an `openllm` model_provider to ~/.codex/config.toml and selects it.

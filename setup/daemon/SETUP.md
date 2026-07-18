@@ -1,5 +1,5 @@
 ---
-version: 1.6.39-registry.7
+version: 1.6.39-registry.8
 os: [osx, linux]
 name: OpenLLM Daemon
 description: Install the local daemon that runs subscription providers (Claude Code, Codex, Kimi) on your machine — required for subscription-OAuth, never routes those credentials through the cloud.

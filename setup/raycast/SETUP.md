@@ -1,5 +1,5 @@
 ---
-version: 1.6.39-registry.7
+version: 1.6.39-registry.8
 os: [osx]
 name: Raycast
 description: Point Raycast AI at OpenLLM — adds an `openllm` custom provider to Raycast's providers.yaml with every activated model.
