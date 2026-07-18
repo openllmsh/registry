@@ -1,11 +1,12 @@
 ---
-version: 1.6.39
+version: 1.6.40
 os: [osx, linux]
+gateway_modes: [local, cloud]
 name: Codex
 description: Point the Codex CLI at OpenLLM — adds an `openllm` model_provider to ~/.codex/config.toml and selects it.
 icon: terminal
 config_var: OPENLLM_API_KEY
-features: ["Installs the Codex CLI if it's missing — reuses your isolated daemon binary when present (no re-download), else runs the official installer", "Merges a [model_providers.openllm] block into ~/.codex/config.toml (idempotent + non-destructive — backs up first, preserves your other providers)", "Sets base_url to your OpenLLM gateway with wire_api=responses + your key, defaulting the model to the ultra fallback chain", "Fetches a model_catalog_json of your activated models so Codex stops warning 'model metadata not found' and sizes auto-compaction correctly", "When the local daemon is running, subscription (chatgpt) hops 307 to your machine automatically — detected from your API key, no extra header"]
+features: ["Local gateway mode by default — points the client at your local daemon (http://127.0.0.1:8787) when one is reachable at install time, so subscription models serve locally with no per-request cloud round trip; switch to cloud mode from the Integrations page (reinstalls with the cloud origin)", "Installs the Codex CLI if it's missing — reuses your isolated daemon binary when present (no re-download), else runs the official installer", "Merges a [model_providers.openllm] block into ~/.codex/config.toml (idempotent + non-destructive — backs up first, preserves your other providers)", "Sets base_url to your OpenLLM gateway with wire_api=responses + your key, defaulting the model to the ultra fallback chain", "Fetches a model_catalog_json of your activated models so Codex stops warning 'model metadata not found' and sizes auto-compaction correctly", "When the local daemon is running, subscription (chatgpt) hops 307 to your machine automatically — detected from your API key, no extra header"]
 requirements: ["awk (POSIX — preinstalled everywhere)"]
 ---
 

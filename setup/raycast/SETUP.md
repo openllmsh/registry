@@ -1,11 +1,12 @@
 ---
-version: 1.6.39
+version: 1.6.40
 os: [osx]
+gateway_modes: [local, cloud]
 name: Raycast
 description: Point Raycast AI at OpenLLM — adds an `openllm` custom provider to Raycast's providers.yaml with every activated model.
 icon: raycast
 config_var: OPENLLM_API_KEY
-features: ["Merges an `openllm` provider into Raycast's providers.yaml (idempotent + non-destructive — backs up first, preserves your other custom providers)", "Sets base_url to your OpenLLM gateway (OpenAI chat-completions wire) + your API key as the default bearer credential", "Declares every activated model (each fallback chain + connected provider model) with its real context window — Raycast doesn't auto-discover from /v1/models, so each must be listed", "Derives per-model abilities (vision / tools / reasoning_effort / temperature / system_message) from the gateway catalog so Raycast routes each model correctly"]
+features: ["Local gateway mode by default — points the client at your local daemon (http://127.0.0.1:8787) when one is reachable at install time, so subscription models serve locally with no per-request cloud round trip; switch to cloud mode from the Integrations page (reinstalls with the cloud origin)", "Merges an `openllm` provider into Raycast's providers.yaml (idempotent + non-destructive — backs up first, preserves your other custom providers)", "Sets base_url to your OpenLLM gateway (OpenAI chat-completions wire) + your API key as the default bearer credential", "Declares every activated model (each fallback chain + connected provider model) with its real context window — Raycast doesn't auto-discover from /v1/models, so each must be listed", "Derives per-model abilities (vision / tools / reasoning_effort / temperature / system_message) from the gateway catalog so Raycast routes each model correctly"]
 requirements: ["macOS with Raycast (custom AI providers require a Raycast Pro / Advanced AI plan)", "python3 OR the config written fresh — used to locate + merge providers.yaml safely", "Enable Settings → AI → Custom Providers in Raycast, then restart Raycast after install to load the models"]
 ---
 

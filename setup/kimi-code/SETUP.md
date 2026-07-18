@@ -1,11 +1,12 @@
 ---
-version: 1.6.39
+version: 1.6.40
 os: [osx, linux]
+gateway_modes: [local, cloud]
 name: Kimi CLI
 description: Point the Kimi CLI at OpenLLM — adds an `openllm` provider to ~/.kimi-code/config.toml and selects it.
 icon: terminal
 config_var: OPENLLM_API_KEY
-features: ["Installs the Kimi CLI if it's missing — reuses your isolated daemon binary when present (no re-download), else runs the official installer", "Merges a [providers.openllm] block into ~/.kimi-code/config.toml (idempotent + non-destructive — backs up first, preserves your other providers)", "Sets base_url to your OpenLLM gateway (type=openai_legacy) + your API key", "Writes a [models.\"<id>\"] entry for every activated model (the Kimi CLI requires one per model, with max_context_size)", "When the local daemon is running, subscription (kimi_code) hops 307 to your machine automatically — detected from your API key, no extra header"]
+features: ["Local gateway mode by default — points the client at your local daemon (http://127.0.0.1:8787) when one is reachable at install time, so subscription models serve locally with no per-request cloud round trip; switch to cloud mode from the Integrations page (reinstalls with the cloud origin)", "Installs the Kimi CLI if it's missing — reuses your isolated daemon binary when present (no re-download), else runs the official installer", "Merges a [providers.openllm] block into ~/.kimi-code/config.toml (idempotent + non-destructive — backs up first, preserves your other providers)", "Sets base_url to your OpenLLM gateway (type=openai_legacy) + your API key", "Writes a [models.\"<id>\"] entry for every activated model (the Kimi CLI requires one per model, with max_context_size)", "When the local daemon is running, subscription (kimi_code) hops 307 to your machine automatically — detected from your API key, no extra header"]
 requirements: ["awk (POSIX — preinstalled everywhere)"]
 ---
 
