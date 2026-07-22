@@ -1,5 +1,5 @@
 ---
-version: 1.7.1-alpha.2
+version: 1.7.9-tunnel.0
 os: [osx, linux]
 name: OpenLLM Daemon
 description: Install the local daemon that runs subscription providers (Claude Code, Codex, Kimi) on your machine — required for subscription-OAuth, never routes those credentials through the cloud.

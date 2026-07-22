@@ -1,5 +1,5 @@
 ---
-version: 1.7.1-alpha.2
+version: 1.7.9-tunnel.0
 os: [osx]
 gateway_modes: [local, cloud]
 name: Raycast

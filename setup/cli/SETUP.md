@@ -1,5 +1,5 @@
 ---
-version: 1.7.1-alpha.2
+version: 1.7.9-tunnel.0
 os: [osx, linux]
 name: OpenLLM CLI
 description: Install the openllmc CLI — the compiled extension runtime that serves the unified OpenLLM MCP server (native gateway API + code search + memory) and the hook subcommands the openllm plugin uses.
